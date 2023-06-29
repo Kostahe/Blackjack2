@@ -56,8 +56,8 @@ public class Player {
         } else if ((this.getSumaValueCards() > otherPlayer.getSumaValueCards()) && (this.getSumaValueCards() > 21) && (otherPlayer.getSumaValueCards() <= 21)) {
             winner = otherPlayer;
 
-        } else if ((this.getSumaValueCards() < otherPlayer.getSumaValueCards()) && (otherPlayer.getSumaValueCards() > 21) && (getSumaValueCards() <= 21)) {
-            winner = otherPlayer;
+        } else if ((this.getSumaValueCards() < otherPlayer.getSumaValueCards()) && (otherPlayer.getSumaValueCards() > 21) && (this.getSumaValueCards() <= 21)) {
+            winner = this;
         } else {
             winner = null;
         }
